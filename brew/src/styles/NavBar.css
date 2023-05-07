@@ -1,0 +1,35 @@
+.bg-myBrown{
+    background-color: rgb(101, 67, 33);
+}
+
+#logo{
+    padding-left: 25px;
+    padding-right: 15px;
+}
+#toggle{
+    margin-right: 25px;
+}
+#orderPage{
+    padding-left: 30px;
+    font-weight: bold;
+}
+#myOrderPage{
+    padding-left: 30px;
+    font-weight: bold;
+}
+#contactPage{
+    padding-left: 30px;
+    font-weight: bold;
+}
+#brand{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+/* .active {
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+    padding-bottom: 1.5px;
+    border-bottom: 1.5px black;
+} */
