@@ -12,7 +12,7 @@ function Main() {
     <div className="Main" id="main">
       <NavBar />
       <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="col-lg-6 col-md-12">
           <Card
             imagePath={latte}
             imageAlt="Latte"
@@ -27,7 +27,7 @@ function Main() {
             subtitle="This is the best Mocha you'll ever have!"
           />
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="col-lg-6 col-md-12">
           <Card
             imagePath={americano}
             imageAlt="Americano"
