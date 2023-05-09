@@ -32,7 +32,7 @@ function Main() {
             imagePath={americano}
             imageAlt="Americano"
             title="Americano"
-            subtitle="Strong and bold espresso shots diluted with ice for a smooth and refreshing coffee experience"
+            subtitle="Strong and bold espresso shots diluted with ice for a smooth and refreshing coffee experience, perfect for hot weathers"
           />
           <br></br>
           <Card
