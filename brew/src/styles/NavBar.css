@@ -2,9 +2,13 @@
     background-color: rgb(126, 84, 41);
 }
 
+#mainPage{
+    background-color: rgb(126, 84, 41);
+}
 #logo{
     padding-left: 25px;
     padding-right: 15px;
+
 }
 #toggle{
     margin-right: 25px;
@@ -26,10 +30,3 @@
     font-weight: bold;
     font-size: 18px;
 }
-/* .active {
-    font-weight: bold;
-    font-size: 20px;
-    color: black;
-    padding-bottom: 1.5px;
-    border-bottom: 1.5px black;
-} */
