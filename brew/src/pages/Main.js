@@ -1,5 +1,4 @@
 import React from 'react';
-import NavBar from '../components/NavBar';
 import Card from '../components/Card';
 import latte from '../assets/latte.png';
 import mocha from '../assets/mocha.png';
@@ -9,8 +8,7 @@ import '../styles/Main.css';
 
 function Main() {
   return (
-    <div className="Main" id="main">
-      <NavBar />
+    <div className="Main" id="mainDiv">
       <div class="row">
         <div class="col-lg-6 col-md-12">
           <Card
