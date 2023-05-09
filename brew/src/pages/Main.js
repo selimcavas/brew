@@ -17,14 +17,14 @@ function Main() {
             imagePath={latte}
             imageAlt="Latte"
             title="Latte"
-            subtitle="This is the best Latte you'll ever have!"
+            subtitle=" Smooth and velvety espresso combined with creamy steamed milk for a perfect balance of boldness and sweetness."
           />
           <br></br>
           <Card
             imagePath={mocha}
             imageAlt="Mocha"
             title="Mocha"
-            subtitle="This is the best Mocha you'll ever have!"
+            subtitle="Decadent espresso and chocolate come together in a rich and indulgent drink, topped with whipped cream for the ultimate treat."
           />
         </div>
         <div class="col-lg-6 col-md-12">
@@ -32,14 +32,14 @@ function Main() {
             imagePath={americano}
             imageAlt="Americano"
             title="Americano"
-            subtitle="This is the best Americano you'll ever have!"
+            subtitle="Strong and bold espresso shots diluted with ice for a smooth and refreshing coffee experience."
           />
           <br></br>
           <Card
             imagePath={frappe}
             imageAlt="Frappe"
             title="Frappe"
-            subtitle="This is the best Frappe you'll ever have!"
+            subtitle="A refreshing blend of espresso, milk, and ice, finished with a dollop of whipped cream and a drizzle of caramel or chocolate sauce."
           />
         </div>
       </div>
