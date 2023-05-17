@@ -1,3 +1,5 @@
 #mainDiv{
     background:rgb(165, 133, 94);
+    height: 80%;
+    overflow: hidden;
 }

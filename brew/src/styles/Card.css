@@ -1,56 +1,64 @@
- .card img {
-    display: block;
-    margin: 0 auto;
-  }
+.card img {
+  display: block;
+  margin: 0 auto;
+}
   
-  .card {
-    display: inline-block;
-    box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
-    border-radius: 50px;
-    width: 600px;
-    padding: 20px;
-    background-color: rgb(196, 156, 108);
-    margin: 10px;
-  }
-  
-  .card-body {
-    margin-top: 10px;
-  }
-  
+.card {
+  display: inline-block;
+  box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 50px;
+  width: 600px;
+  height: 50%;
+  padding: 20px;
+  background-color: rgb(196, 156, 108);
+  margin: 10px;
+}
+
+.card-body {
+  margin-top: 10px;
+}
+
+.col-lg-6,
+.col-md-6,
+.col-sm-12 {
+  text-align: center;
+  padding: 0;
+}
+
+h5{
+  font-weight: bold;
+  font-size: x-large;
+}
+
+#price{
+  margin-top: 15px;
+  margin-bottom: 2px;
+  font-weight: bold;
+  font-size: large;
+} 
+
+@media screen and (max-width: 767px) {
   .col-lg-6,
   .col-md-6,
   .col-sm-12 {
-    text-align: center;
-    padding: 0;
+    margin-bottom: 20px;
   }
+  .card {
+    width: 80%;
+  }
+}
 
-  h5{
-    font-weight: bold;
-    font-size: x-large;
+@media screen and (min-width: 768px) {
+  .col-lg-6,
+  .col-md-6,
+  .col-sm-12 {
+    margin: auto;
+    float: none;
+    display: table-cell;
+    vertical-align: middle;
   }
-  
-  @media screen and (max-width: 767px) {
-    .col-lg-6,
-    .col-md-6,
-    .col-sm-12 {
-      margin-bottom: 20px;
-    }
-    .card {
-      width: 80%;
-    }
+  .card {
+    width: 80%;
   }
-  
-  @media screen and (min-width: 768px) {
-    .col-lg-6,
-    .col-md-6,
-    .col-sm-12 {
-      margin: auto;
-      float: none;
-      display: table-cell;
-      vertical-align: middle;
-    }
-    .card {
-      width: 80%;
-    }
-  }
+}
   
