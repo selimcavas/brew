@@ -1,9 +1,11 @@
 import React from 'react';
 import '../styles/OrderForm.css';
+import { OrderFunc } from '../backend.js';
+
 function Order() {
   return (
     <div id="orderDiv">
-      <form id="orderForm">
+      <form id="orderForm" onSubmit={OrderFunc}>
         <br />
         <header>Order Form</header>
         <input
@@ -11,27 +13,42 @@ function Order() {
           id="customerName"
           placeholder="NAME"
           class="formElements"
+          required
         />
         <input
           type="text"
           id="customerSurname"
           placeholder="SURNAME"
           class="formElements"
+          required
         />
-        <select id="coffees" class="formElements">
+        <select id="coffees" class="formElements" required>
           <option value="" disabled selected>
             SELECT YOUR DREAM COFFEE!
           </option>
-          <option value="1">Latte</option>
-          <option value="2">Americano</option>
-          <option value="3">Mocha</option>
-          <option value="4">Frappe</option>
+          <option value="Latte">Latte</option>
+          <option value="Americano">Americano</option>
+          <option value="Mocha">Mocha</option>
+          <option value="Frappe">Frappe</option>
         </select>
-        <label for="quantity">Quantity</label>
-        <input type="number" id="quantity" min="1" />
-        <br></br>
-        <label for="tableNumber">Table Number</label>
-        <input type="number" id="tableNumber" min="1" max="25" />
+        <input
+          type="number"
+          id="quantity"
+          placeholder="Quantity to be ordered"
+          class="formElements"
+          min="1"
+          max="10"
+          required
+        />
+        <input
+          type="number"
+          id="tableNumber"
+          placeholder="Table Number"
+          class="formElements"
+          min="1"
+          max="25"
+          required
+        />
         <input
           type="submit"
           id="submitOrder"
