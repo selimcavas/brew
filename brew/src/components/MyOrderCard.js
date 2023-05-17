@@ -6,21 +6,21 @@ import latte from '../assets/latte.png';
 import mocha from '../assets/mocha.png';
 
 function MyOrderCard(props) {
-  const { coffeeType, name, price, time } = props;
+  const { coffeeType, name, quantity, price, time } = props;
 
   // Determine image source based on coffeeType
   let imageSrc;
   switch (coffeeType) {
-    case 'americano':
+    case 'Americano':
       imageSrc = americano;
       break;
-    case 'frappe':
+    case 'Frappe':
       imageSrc = frappe;
       break;
-    case 'latte':
+    case 'Latte':
       imageSrc = latte;
       break;
-    case 'mocha':
+    case 'Mocha':
       imageSrc = mocha;
       break;
   }
@@ -30,8 +30,9 @@ function MyOrderCard(props) {
       <img src={imageSrc} alt={coffeeType} className="order-card-image" />
       <div className="order-card-info">
         <h3>{name}</h3>
-        <p>{price} USD</p>
-        <p>{time}</p>
+        <p id="quantity">Quantity: {quantity}</p>
+        <p id="price">Total Price: {price} $</p>
+        <p>Order time: {time}</p>
       </div>
     </div>
   );
