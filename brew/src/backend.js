@@ -60,6 +60,16 @@ export function ContactFunc() {
     message: message,
   };
 
+  // Check if 30 seconds have passed since the last invocation
+  const currentTime = Date.now();
+  const lastInvocationTime = localStorage.getItem('lastInvocationTime');
+  const minInterval = 30000; // Minimum interval of 30 seconds
+
+  if (lastInvocationTime && currentTime - lastInvocationTime < minInterval) {
+    alert('Please wait for 30 seconds before sending another message.');
+    return;
+  }
+
   // Make a POST request using Axios
   axios
     .post('http://localhost:3001/contacts', contactData)
@@ -71,6 +81,9 @@ export function ContactFunc() {
       // Handle the error
       console.error(error);
     });
+
+  // Update the last invocation time
+  localStorage.setItem('lastInvocationTime', currentTime);
 
   alert('Message sent!');
 }
