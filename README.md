@@ -18,7 +18,7 @@ To start the website, you should run the following commands:
 
 1- `cd brew`
 
-2- `npm i`
+2- `npm install`
 
 3- `npm start`
 
